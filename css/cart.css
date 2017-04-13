@@ -1,0 +1,199 @@
+.cart-header {
+  position: relative;
+}
+.cart-header h4 {
+  text-align: center;
+  line-height: 44px;
+  font-weight: normal;
+}
+.cart-body {
+  /*��ȫ*/
+  /*��Ʒ*/
+}
+.cart-body .cart-safe {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.cart-body .cart-safe p {
+  position: relative;
+  padding-left: 30px;
+  line-height: 34px;
+  font-size: 12px;
+  display: inline-block;
+}
+.cart-body .cart-safe p::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  background: url("../images/safe_icon.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.cart-body .shop {
+  padding-top: 10px;
+  background-color: #eee;
+}
+.cart-body .shop .checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 34px;
+  padding: 7px 10px;
+  background: url("../images/shop-icon.png") no-repeat;
+  -webkit-background-size: 50px 100px;
+  background-size: 50px 100px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.cart-body .shop .shop-title {
+  position: relative;
+  height: 34px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  padding-left: 40px;
+}
+.cart-body .shop .shop-title .title-right {
+  line-height: 32px;
+}
+.cart-body .shop .shop-title .title-right .jd-logo {
+  width: 20px;
+  height: 20px;
+  margin-top: 7px;
+  background: url("../images/buy-logo.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.cart-body .shop .shop-title .title-right .free {
+  font-size: 12px;
+  color: #d8505c;
+}
+.cart-body .shop .shop-content {
+  position: relative;
+  background-color: #fff;
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 40px;
+}
+.cart-body .shop .shop-content .checkbox {
+  background-position: -25px 0;
+}
+.cart-body .shop .shop-content .product {
+  height: 100px;
+  padding: 10px;
+}
+.cart-body .shop .shop-content .product > a {
+  float: left;
+  width: 80px;
+  height: 80px;
+}
+.cart-body .shop .shop-content .product > a > img {
+  width: 100%;
+}
+.cart-body .shop .shop-content .product .info {
+  padding-left: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+.cart-body .shop .shop-content .product .info .text {
+  line-height: 16px;
+  height: 32px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.cart-body .shop .shop-content .product .info .price {
+  color: #d8505c;
+}
+.cart-body .shop .shop-content .product .info .option .pull-left * {
+  float: left;
+  width: 32px;
+  height: 24px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 22px;
+  color: #ccc;
+}
+.cart-body .shop .shop-content .product .info .option .pull-left input {
+  border-right: none;
+  border-left: none;
+}
+.cart-body .shop .shop-content .product .info .option .pull-left span:nth-child(1) {
+  border-radius: 4px 0 0 4px;
+}
+.cart-body .shop .shop-content .product .info .option .pull-left span:nth-child(3) {
+  border-radius: 0px 4px 4px 0px;
+}
+.cart-body .shop .shop-content .product .info .option .pull-right {
+  width: 19px;
+  height: 21px;
+  cursor: pointer;
+}
+.cart-body .shop .shop-content .product .info .option .pull-right .del-up {
+  float: left;
+  width: 18px;
+  height: 3px;
+  background: url(../images/delete_up.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.cart-body .shop .shop-content .product .info .option .pull-right .del-down {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-top: -2px;
+  background: url(../images/delete_down.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.cart-body .shop .shop-content .product .info .option .open .del-up {
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+/*ģ̬��*/
+.winBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.winBox .delBox {
+  position: absolute;
+  left: 10%;
+  top: 200px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.winBox .delBox p {
+  line-height: 60px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.winBox .delBox > div {
+  padding: 10px;
+}
+.winBox .delBox > div a {
+  width: 45%;
+  height: 36px;
+  background-color: #d8505c;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 36px;
+}
+.winBox .delBox > div .cancel {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
